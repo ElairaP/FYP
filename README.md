@@ -1,21 +1,33 @@
 # Final Year Project
-# Artificial Neural Networks for Breast Cancer Diagnsis: An Exploration of Performance and Explainability
+# Artificial Neural Networks for Breast Cancer Diagnosis: An Exploration of Performance and Explainability
 ## About the Project
 - This project involved using Machine Learning (ML) to predict breast cancer diagnoses as well as using Explainable Artificial Intelligence (XAI) to help explain the reasoning behind the ML model's prediction.
 
 - The project had two main aims:
   - To investigate the performance of Artificial Neural Networks (ANNs).
-    - This was achieved by using performance metrics to evaluate the ANN and comparing its performance to other Machine Learning (ML) models.
+    - This was achieved by using performance metrics to evaluate the ANN and comparing its performance to other ML models.
   - To make an ANN model more explainable.
-    - This was acheived by using Explainable Artificial Intelligence (XAI) to improve the understanding of relarionships between features and predictions.
+    - This was acheived by using XAI to improve the understanding of relarionships between features and predictions.
 
 - Completed using Python in a Jupyter Notebook
   - Python packages: Pandas, Scikit-learn, SHAP, DiCE.
 
- ## Dataset
--  Project uses the Wisconsin Diagnostic Breast Cancer (WDBC) dataset from the UCI machine learning repository.
+ ## Dataset and Preprocessing
+- Project uses the Wisconsin Diagnostic Breast Cancer (WDBC) dataset from the UCI machine learning repository.
+- Used a mapping so that a benign diagnosis is represented by a '0' and a malginant diagnosis is represented by a '1'.
+- 80/20 train test split applied to dataset.
+- Standardisation applied to the dataset to prevent unequal contributions of certain features due to different measurement scales.
 
 ## Machine Learning
-- ML models investigated: Artificial Neural Networks (ANN), Support Vector Machine (SVM), Decision Tree (DT), Random Forest (RF), Logistic Regressions (LR)
+- ML models investigated: Artificial Neural Networks (ANN), Support Vector Machine (SVM), Decision Tree (DT), Random Forest (RF), Logistic Regressions (LR).
+- Evaluation metrics used: Accuracy, Precision, Recall, F1-score.
+- Validation strategy: Stratified 10-fold cross validation.
+- ML model hyperparameter selection:
+  - Randomised search to help narrow down the optimal set of hyperparameters.
+  - Followed by manual adjustment of hyperparameters to investigate effects of performance.
+ 
+ ### Training (10-fold cross validation) results
+
+ ### Test set results
 
 ## XAI
