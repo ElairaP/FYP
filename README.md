@@ -25,10 +25,20 @@
 - ML model hyperparameter selection:
   - Randomised search to help narrow down the optimal set of hyperparameters.
   - Followed by manual adjustment of hyperparameters to investigate effects of performance.
+- Performance on the test set shows that the SVM has the best performance, followed by the ANN model.
  
  ### Training (10-fold cross validation) results
 ![Training results](https://github.com/ElairaP/FYP/blob/main/screenshots/ML_Cross_Validation_results.png)
 
  ### Test set results
+![Test results](https://github.com/ElairaP/FYP/blob/main/screenshots/ML_test_results.png)
 
 ## XAI
+- XAI methods are applied to the ANN model to investigate the relationships between the dataset features and model predictions. This information is used to explain why the ANN model makes certain predictions.
+- Two XAI methods used:
+  - Shapely Additive Explanations (SHAP) (Lunderberg and Lee).
+  - Diverse Counterfactual Explanations (DiCE) (Mothilal et al.). 
+
+### Examples of XAI Plots
+
+
