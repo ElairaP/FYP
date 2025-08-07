@@ -40,5 +40,14 @@
   - Diverse Counterfactual Explanations (DiCE) (Mothilal et al.). 
 
 ### Examples of XAI Plots
+- The figure below shows two SHAP plots.
+- The plot on the left shows how much each feature contributes to the ANN model's diagnosis prediction. Higher contributing features are displayed higher on the graph.
+- The plot on the right shows how feature values influence the ANN model's predictions.
+  - E.g. The graph shows that higher values for the feature 'Radius SE' are more likely to contribute to a malignant prediction whereas lower values are more likely to contribute to a benign prediction.
+![SHAP plots](https://github.com/ElairaP/FYP/blob/main/screenshots/SHAP_plots.png)
+
+
+
+
 
 
