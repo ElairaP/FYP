@@ -27,6 +27,7 @@
   - Followed by manual adjustment of hyperparameters to investigate effects of performance.
  
  ### Training (10-fold cross validation) results
+![Training results](https://github.com/ElairaP/FYP/blob/main/screenshots/ML_Cross_Validation_results.png)
 
  ### Test set results
 
